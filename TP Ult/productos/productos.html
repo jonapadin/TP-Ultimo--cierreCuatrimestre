@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="productos.css">
+    <title>SuperMarket</title>
+</head>
+
+<body>
+    <div class="titulo">Super<span>Market</span>
+    </div>
+
+    <header class="header">
+        <nav class="navegador"> <a href="/TP Ult/index.html">Inicio</a></nav>
+        <nav class="navegador"><a href="/TP Ult/contacto/contacto.html">Contacto</a> </nav>
+    </header>
+    <main class="cuerpo">
+        <h1>Lista de Compras</h1>
+        <div id="listaProductos">
+            
+        </div>
+        <div class="metodosDePago" id="metodosDePago">
+            <p>Medio de pago:</p>
+            <label><input type="radio" name="metodoPago" value="efectivo" checked> Efectivo</label>
+            <label><input type="radio" name="metodoPago" value="tarjetaDebito"> Tarjeta Débito</label>
+            <label><input type="radio" name="metodoPago" value="tarjetaCredito"> Tarjeta Crédito</label>
+            <label><input type="radio" name="metodoPago" value="mercadopago"> MercadoPago</label>
+        </div>
+        <div class="total">
+            <p>Total: $<span id="total"></span></p>
+            <button id="calcularTotal">Calcular Total</button>
+            <button id="comprar">Comprar</button>
+        </div>
+
+        <p id="check"></p>
+    </main>
+
+    
+    <footer class="footer">
+        <p>© 2024 SuperMarket | Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="./productos.js"></script>
+</body>
+
+</html>

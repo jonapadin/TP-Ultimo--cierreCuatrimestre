@@ -1,0 +1,185 @@
+body {
+  background-color: rgb(190, 194, 194);
+}
+
+.titulo {
+  font-size: 90px;
+  text-align: center;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  color: #ebd758;
+  text-shadow: -1px 0 #414d68, 0 1px #414d68, 1px 0 #414d68, 0 -1px #414d68,
+    -2px 2px 0 #414d68, 2px 2px 0 #414d68, 1px 1px #414d68, 2px 2px #414d68,
+    3px 3px #414d68, 4px 4px #414d68, 5px 5px #414d68, 6px 6px #414d68,
+    7px 7px #414d68, 8px 8px #414d68, 9px 9px #414d68;
+}
+
+div span {
+  font-size: 50px;
+  color: silver;
+}
+
+.header {
+  color: white;
+  background-color: rgb(121, 118, 118);
+  font-size: 35px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+}
+
+.footer {
+  color: white;
+  background-color: rgb(121, 118, 118);
+  font-size: 25px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer address span {
+  margin-left: 20px;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  font-family: arial;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+  font-family: arial;
+  text-decoration: none;
+}
+
+.cuerpo {
+  width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.listaProductos {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.caja {
+  font-size: 18px;
+  width: 80px;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+button:active {
+  background-color: #1e7e34;
+}
+
+.texto {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.total {
+  text-align: center;
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+#total {
+  font-weight: bold;
+  color: black;
+  font-size: 35px;
+}
+
+.metodosDePago {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.rechaza {
+  color: red;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.confirma {
+  color: green;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  display: flex;
+  font-size: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgProductos {
+  width: auto;
+  height: 100px;
+  margin: 10px;
+}
+
+div.producto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border: 2px solid;
+  padding: 10px;
+  margin: 10px;
+  width: 90%;
+}
+
+.parrafos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
