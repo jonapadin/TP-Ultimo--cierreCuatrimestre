@@ -104,13 +104,6 @@ button:active {
   background-color: #1e7e34;
 }
 
-.texto {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 25px;
-  text-align: center;
-  margin-bottom: 10px;
-}
 
 .total {
   text-align: center;
@@ -159,8 +152,8 @@ h1 {
 }
 
 .imgProductos {
-  width: auto;
-  height: 100px;
+  width: 20%;
+  height: 20%;
   margin: 10px;
 }
 
@@ -182,4 +175,9 @@ div.producto {
   justify-content: center;
   align-items: center;
   width: 60%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 10px;
 }

@@ -6,7 +6,7 @@ let productos = [
     img : "/TP Ult/productos/imgProductos/leche.png",
   },
   { 
-    nombre: "Queso",
+    nombre: "Quesos",
     precio: 1700,
     stock: 5,
     img : "/TP Ult/productos/imgProductos/queso.png",
