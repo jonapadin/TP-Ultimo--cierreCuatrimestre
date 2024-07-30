@@ -90,6 +90,10 @@ for (let i = 0; i < productos.length; i++) {
   stock.id = `stock-${i}`;
   stock.innerText = `Stock actual: ${producto.stock}`;
 
+  if(producto.stock === 6){
+    imgDescuento.style.display = 'inline';
+  }
+
   let input = document.createElement('input');
   input.classList.add('caja');
   input.type = 'number';
@@ -103,6 +107,7 @@ for (let i = 0; i < productos.length; i++) {
   parrafos.appendChild(nombre);
   parrafos.appendChild(stock);
   item.appendChild(img);
+  item.appendChild(imgDescuento);
   item.appendChild(parrafos);
   item.appendChild(input);
   listaProductos.appendChild(item);
