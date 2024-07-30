@@ -15,7 +15,7 @@ let productos = [
     nombre: "Verduras",
     precio: 1200,
     stock: 12,
-    img : "vegetables.jpg",
+    img : "verduras.png",
   },
   { 
     nombre: "Carnes",
@@ -71,6 +71,10 @@ for (let i = 0; i < productos.length; i++) {
   let item = document.createElement('div');
   item.classList.add('producto');
 
+  let imgDescuento = document.createElement('img');
+  imgDescuento.classList.add('imgDescuento');
+  imgDescuento.src = 'oferta.png';
+
   let img = document.createElement('img');
   img.classList.add('imgProductos');
   img.src = producto.img;
@@ -96,7 +100,6 @@ for (let i = 0; i < productos.length; i++) {
     cantidadComprada[i] = input.value;
   });
 
-
   parrafos.appendChild(nombre);
   parrafos.appendChild(stock);
   item.appendChild(img);
@@ -105,23 +108,24 @@ for (let i = 0; i < productos.length; i++) {
   listaProductos.appendChild(item);
 }
 
-// Función para calcular el total de la compra
-function calcularTotal() {
-  let total = 0;
-  for (let i = 0; i < cantidadComprada.length; i++) {
-    let cantidad = cantidadComprada[i];
-    if (cantidad > 0 && cantidad <= productos[i].stock) {
-      total += cantidad * productos[i].precio;
+// Función para actualizar la imagen de descuento
+function actualizarDescuento() {
+  let productos = document.getElementsByClassName('producto');
+  for (let i = 0; i < productos.length; i++) {
+    let imgDescuento = productos[i].querySelector('.imgDescuento');
+    if (productos.stock[i] === 3) {
+      imgDescuento.style.display = 'block';
+    } else {
+      imgDescuento.style.display = 'none';
     }
   }
-  document.getElementById('total').innerText = total;
 }
 
 // Evento para el botón de calcular total
 document.getElementById('calcularTotal').addEventListener('click', calcularTotal);
 
 // Evento para el botón de comprar
-document.getElementById('comprar').addEventListener('click', (e) => {
+document.getElementById('comprar').addEventListener('click', () => {
   calcularTotal();
   let total = document.getElementById('total').innerText;
   if (total > 0) {
@@ -134,7 +138,7 @@ document.getElementById('comprar').addEventListener('click', (e) => {
         document.getElementById(`stock-${i}`).innerText = `Stock actual: ${productos[i].stock}`;
       }
     }
-
+  
   } else {
     let check = document.getElementById('check');
     check.classList.add('rechaza');
