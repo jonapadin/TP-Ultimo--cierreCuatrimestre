@@ -90,7 +90,7 @@ for (let i = 0; i < productos.length; i++) {
   stock.id = `stock-${i}`;
   stock.innerText = `Stock actual: ${producto.stock}`;
 
-  if(producto.stock === 6){
+  if(producto.stock >= 10){
     imgDescuento.style.display = 'inline';
   }
 
