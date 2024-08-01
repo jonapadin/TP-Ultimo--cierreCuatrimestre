@@ -1,5 +1,6 @@
 body {
   background-color: rgb(190, 194, 194);
+  margin: 0;
 }
 
 .titulo {
@@ -16,7 +17,7 @@ body {
 
 div span {
   font-size: 50px;
-  color: silver;
+  color: rgb(143, 134, 134);
 }
 
 .header {
@@ -47,7 +48,7 @@ footer address span {
 }
 
 h2 {
-  font-size: 35px;
+  font-size: 40px;
   text-align: center;
 }
 
@@ -125,7 +126,7 @@ button:active {
   background-color: #1e7e34;
 }
 
-.confirma{
+.confirma {
   color: green;
   font-size: 30px;
   display: flex;

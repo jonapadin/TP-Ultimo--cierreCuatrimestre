@@ -1,5 +1,6 @@
 body {
   background-color: rgb(190, 194, 194);
+  margin: 0;
 }
 
 .titulo {
@@ -16,7 +17,7 @@ body {
 
 div span {
   font-size: 50px;
-  color: silver;
+  color: rgb(143, 134, 134);
 }
 
 .header {
@@ -57,7 +58,7 @@ a:hover {
   color: black;
   font-family: arial;
   text-decoration: none;
-  background-color:rgb(121, 118, 118);
+  background-color: rgb(121, 118, 118);
 }
 
 .cuerpo {
@@ -106,7 +107,6 @@ button:hover {
 button:active {
   background-color: #1e7e34;
 }
-
 
 .total {
   text-align: center;
@@ -162,12 +162,12 @@ h1 {
 }
 
 .imgDescuento {
-    position: absolute;
-    width: 20%;
-    height: 35%;
-    top: 0;
-    left: 0;
-    display: none;
+  position: absolute;
+  width: 15%;
+  height: 30%;
+  top: 0;
+  left: 0;
+  display: none;
 }
 
 div.producto {

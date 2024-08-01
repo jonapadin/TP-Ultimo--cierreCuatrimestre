@@ -64,7 +64,7 @@ let productos = [
 let cantidadComprada = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
 const listaProductos = document.getElementById('listaProductos');
-
+//Creacion de la lista de compra,los productos, su imagen, su stock, etc
 for (let i = 0; i < productos.length; i++) {
   let producto = productos[i];
 
@@ -113,17 +113,17 @@ for (let i = 0; i < productos.length; i++) {
   listaProductos.appendChild(item);
 }
 
-// Función para actualizar la imagen de descuento
-function actualizarDescuento() {
-  let productos = document.getElementsByClassName('producto');
-  for (let i = 0; i < productos.length; i++) {
-    let imgDescuento = productos[i].querySelector('.imgDescuento');
-    if (productos.stock[i] === 3) {
-      imgDescuento.style.display = 'block';
-    } else {
-      imgDescuento.style.display = 'none';
+
+// Función para calcular el total de la compra
+function calcularTotal() {
+  let total = 0;
+  for (let i = 0; i < cantidadComprada.length; i++) {
+    let cantidad = cantidadComprada[i];
+    if (cantidad > 0 && cantidad <= productos[i].stock) {
+      total += cantidad * productos[i].precio;
     }
   }
+  document.getElementById('total').innerText = total;
 }
 
 // Evento para el botón de calcular total
