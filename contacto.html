@@ -20,18 +20,17 @@
 
         <h2>Formulario de contacto</h2>
 
-        <form class="formulario">
+        <form class="formulario" id="formulario">
             <label class="formularioTexto" for="nombre">Tu nombre:</label>
-            <input class="formularioBox" type="text" id="nombre">
+            <input class="formularioBox" type="text" id="nombre" required>
             <label class="formularioTexto" for="apellido">Tu apellido:</label>
-            <input class="formularioBox" type="text" id="apellido">
+            <input class="formularioBox" type="text" id="apellido" required>
             <label class="formularioTexto" for="email">Tu email:</label>
-            <input class="formularioBox" type="email" id="email">
+            <input class="formularioBox" type="email" id="email" required>
             <label class="formularioTexto" for="telefono">Tu teléfono:</label>
-            <input class="formularioBox" type="tel" pattern="[0-9]{10}" maxlength="10" id="telefono">
+            <input class="formularioBox" type="tel" pattern="[0-9]{10}" maxlength="10" id="telefono" required>
             <label class="formularioTexto" for="mensaje">Escribe tu mensaje:</label>
-            <textarea name="mensaje" id="mensaje"></textarea>
-            
+            <textarea name="mensaje" id="mensaje" required></textarea>
             <button id="enviar">Enviar</button>
         </form>
         <p id="check"></p>

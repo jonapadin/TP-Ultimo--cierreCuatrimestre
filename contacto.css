@@ -52,19 +52,14 @@ h2 {
   text-align: center;
 }
 
-a:link {
+.header .navegador a {
   color: white;
   text-decoration: none;
+  padding: 10px;
 }
-a:visited {
-  color: white;
-  font-family: arial;
-  text-decoration: none;
-}
-a:hover {
-  color: black;
-  font-family: arial;
-  text-decoration: none;
+
+.header .navegador a:hover {
+  background-color: #414d68;
 }
 
 .cuerpo {
@@ -128,7 +123,15 @@ button:active {
 
 .confirma {
   color: green;
-  font-size: 30px;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error {
+  color: red;
+  font-size: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
